@@ -8,12 +8,32 @@ body {
   font-family: Besley, serif;
 }
 
+.leftside {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 1 1;
+  justify-self: flex-start;
+  align-items: center;
+}
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 }
 
+div.rightside {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+
+
+
+ 
+}
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
@@ -29,6 +49,14 @@ body {
   font-style: italic;
 }
 
+.greybar {
+  display: block;
+  background-color: lightgrey;
+  outline-style: groove;
+  outline-width: 1px;
+  outline-color: black;
+  height: 80px;
+}
 button {
   border: none;
   border-radius: 8px;
@@ -44,5 +72,11 @@ a {
 }
 
 ul {
+  display: flex;
+  padding: 0px;
+  padding-left: 15px;
+  margin: 0px;
+  display: flex;
+  gap: 25px;
   list-style-type: none;
 }
